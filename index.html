@@ -17,9 +17,33 @@
   </header>
   <div id="main">
     <div class="left-input">
-      
+<div class="gender">
+  <h2>Gender</h2>
+  <input id="male" type="radio" name="gender">
+  <label for="male">Male</label>
+  <input id="female" type="radio" name="gender">
+  <label for="female">Female</label>
+  <input id="both" type="radio" name="gender">
+  <label for="both">Both</label>
+</div>
+<div class="how-many">
+  <h2>How Many Names</h2>
+  <input type="number">
+  <div class="more-options">
+    <h6>Show More Options</h6>
+    <span>Propets Names</span>
+    <span>Angles Names</span>
+    <span>Sahabas Names</span>
+    
+
+  </div>
+
+  <button onclick="generate()">Generate Random Name</button>
+</div>
     </div>
-    <div class="right-output"></div>
+    <div class="right-output">
+      <h2>Name will appear here</h2>
+    </div>
   </div>
 
 
