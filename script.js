@@ -43,7 +43,7 @@ const lastNames = [
   "Rafiq", "Saeed", "Naseem", "Nawaz", "Zafar", "Shahid", "Mansoor", "Ashraf", "Rafi", "Nadeem",
   // Expand similarly until 500 names are complete
 ];
-const prophets = [
+const prophetsNames = [
   "Adam", "Idris", "Nuh", "Hud", "Salih",
   "Ibrahim", "Lut", "Ismail", "Ishaq", "Yaqub",
   "Yusuf", "Shuayb", "Musa", "Harun", "Dhul-Kifl",
@@ -82,8 +82,8 @@ let maleResult=""
 let femaleResult= ""
 let lastResult=""
 let bothResult= ""
+const output= document.querySelector(".right-output")
 function generate() {
-  const output= document.querySelector(".right-output")
   const maleCheck= document.querySelector("#male")
   const femaleCheck= document.querySelector("#female")
   const nameNumber= document.querySelector(".name-number")
@@ -118,3 +118,24 @@ function generate() {
     }
   }
 }
+
+const prophets= document.querySelector(".propets")
+const angels= document.querySelector(".angels")
+const sahabas= document.querySelector(".sahabas")
+
+prophets.addEventListener("click", function () {
+  output.innerHTML = "";
+  prophetsNames.map((names)=>{
+    let result= document.createElement("h2")
+      result.innerHTML=(names)
+    output.appendChild(result)
+  })
+})
+sahabas.addEventListener("click", function () {
+  output.innerHTML = "";
+  sahabaNames.map((names)=>{
+    let result= document.createElement("h2")
+      result.innerHTML=(names)
+    output.appendChild(result)
+  })
+})
