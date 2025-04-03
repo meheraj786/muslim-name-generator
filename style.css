@@ -188,3 +188,39 @@ color: #20bf55;
   background: #20bf55;
   color: white;
 }
+
+@media (max-width:600px){
+  #main{
+    padding: 100px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #banner {
+    width: 100%;
+    height: 40vh;
+  }
+  #banner .heading{
+    position: absolute;
+    background: #00000015;
+    font-size: 22px;
+    z-index: 2;
+    color: white;
+    padding: 10px;
+  }
+  #banner .heading h1{
+    font-size: 22px;
+  }
+  #banner .heading .span{
+  display: block;
+  font-size: 24px;
+  color: #20bf55;
+  }
+  #banner .heading span{
+    font-family: "Protest Riot", sans-serif; 
+    font-size: 32px;
+  }
+}
