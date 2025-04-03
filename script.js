@@ -78,39 +78,42 @@ function option(elem) {
 let maleResult=""
 let femaleResult= ""
 let lastResult=""
-let bothResult= []
+let bothResult= ""
 function generate() {
   const output= document.querySelector(".right-output")
   const maleCheck= document.querySelector("#male")
   const femaleCheck= document.querySelector("#female")
-  const bothCheck= document.querySelector("#both")
+  const nameNumber= document.querySelector(".name-number")
   
-
-
-  if (maleCheck.checked) {
-    let maleIndex= Math.floor(Math.random()*maleNames.length)
-    let lastIndex= Math.floor(Math.random()*lastNames.length)
-    maleResult= maleNames[maleIndex]
-    lastResult= lastNames[lastIndex]
-    output.innerHTML= `<h2>${maleResult} ${lastResult}</h2>`
-    console.log("male");
-  }else if(femaleCheck.checked){
-    let femaleIndex= Math.floor(Math.random()*femaleNames.length)
-    let lastIndex= Math.floor(Math.random()*lastNames.length)
-    femaleResult= femaleNames[femaleIndex]
-    lastResult= lastNames[lastIndex]
-    output.innerHTML= `<h2>${femaleResult} ${lastResult}</h2>`
-  }else{
-    let bothNames=maleNames
-    bothNames+=femaleNames
-    
-    let bothIndex= Math.floor(Math.random()*(bothNames.length))
-    let lastIndex= Math.floor(Math.random()*lastNames.length)
-    bothResult= bothNames[bothIndex]
-    lastResult= lastNames[lastIndex]
-    output.innerHTML= `<h2>${bothResult} ${lastResult}</h2>`
-    console.log(bothNames);
+  output.innerHTML = "";
+  for (let i = 0; i < nameNumber.value; i++) {
+    if (maleCheck.checked) {
+      let maleIndex= Math.floor(Math.random()*maleNames.length)
+      let lastIndex= Math.floor(Math.random()*lastNames.length)
+      maleResult= maleNames[maleIndex]
+      lastResult= lastNames[lastIndex]
+      let result= document.createElement("h2")
+      result.innerHTML=`${maleResult} ${lastResult}`
+      output.appendChild(result)
+    }else if(femaleCheck.checked){
+      let femaleIndex= Math.floor(Math.random()*femaleNames.length)
+      let lastIndex= Math.floor(Math.random()*lastNames.length)
+      femaleResult= femaleNames[femaleIndex]
+      lastResult= lastNames[lastIndex]
+      let result= document.createElement("h2")
+      result.innerHTML=`${femaleResult} ${lastResult}`
+      output.appendChild(result)
+    }else{
+      let bothNames=maleNames.concat(femaleNames)
+      let bothIndex= Math.floor(Math.random()*(bothNames.length))
+      let lastIndex= Math.floor(Math.random()*lastNames.length)
+      bothResult= bothNames[bothIndex]
+      lastResult= lastNames[lastIndex]
+      output.innerHTML= `<h2>${bothResult} ${lastResult}</h2>`
+    }
   }
+
+
 
   
 }

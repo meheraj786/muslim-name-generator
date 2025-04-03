@@ -55,6 +55,8 @@ header h1 span{
   border: 2px solid #20bf55;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   overflow-y: auto;
