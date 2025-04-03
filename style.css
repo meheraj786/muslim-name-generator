@@ -10,7 +10,89 @@
 ul li{
   list-style: none;
 }
+body{
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(0deg,#ffffff, #daf7dc );
+  height: 100vh;
+  color: #001242;
+}
 
 a{
   text-decoration: none;
+}
+
+header{
+  padding: 10px 0;
+  text-align: center;
+  background: #daf7dc;
+}
+header h1{
+  font-size: 30px;
+  font-weight: 600;
+  color: #001242;
+  font-family: "Poppins", sans-serif;
+}
+header h1 span{
+  font-size: 48px;
+  display: block;
+  font-family: "Protest Riot", sans-serif;
+  color: #20bf55;
+}
+
+#main{
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 1320px;
+  margin: 0 auto;
+}
+#main .left-input, .right-output{
+  width: 100%;
+}
+#main .right-output{
+  text-align: center;
+  border: 2px solid #20bf55;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+#main .left-input h2{
+  color: #20bf55;
+  font-size: 28px;
+  margin-top: 20px;
+}
+#main .name-number{
+  background: #daf7dc;
+  width: 100px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #20bf55;
+}
+#main .options{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#main .more-options{
+  margin-top: 20px;
+}
+#main button{
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: #20bf55;
+  color: #daf7dc;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #20bf55;
+}
+#main button:hover{
+  background: transparent;
+  color: #20bf55;
+  border: 1px solid #20bf55;
 }
