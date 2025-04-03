@@ -57,7 +57,7 @@ header h1 span{
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 #main .left-input h2{
   color: #20bf55;

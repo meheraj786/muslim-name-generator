@@ -76,10 +76,13 @@ function option(elem) {
   }
 }
 let maleResult=""
+let lastResult=""
 function generate() {
   const output= document.querySelector(".right-output")
   let maleIndex= Math.floor(Math.random()*maleNames.length)
+  let lastIndex= Math.floor(Math.random()*lastNames.length)
   maleResult= maleNames[maleIndex]
-  output.innerHTML= maleResult
+  lastResult= lastNames[lastIndex]
+  output.innerHTML= `<h2>${maleResult} ${lastResult}</h2>`
   
 }
