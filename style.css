@@ -71,9 +71,10 @@ header h1 span{
 #banner .heading .span{
 display: block;
 font-size: 44px;
+font-family: "Poppins", sans-serif;
 color: #20bf55;
 }
-#banner .heading span{
+#banner .heading .muslim{
   font-family: "Protest Riot", sans-serif; 
   font-size: 52px;
 }
@@ -191,7 +192,7 @@ color: #20bf55;
 
 @media (max-width:600px){
   #main{
-    padding: 100px 10px;
+    padding: 50px 10px;
     display: flex;
     flex-direction: column;
     height: 100%;
