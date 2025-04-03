@@ -69,10 +69,13 @@ const femaleSahabaNames = [
 
 
 function option(elem) {
+  const arrow= document.querySelector(".arrow")
   if (elem.nextElementSibling.style.display=="block") {
     elem.nextElementSibling.style.display="none"
+    arrow.style.transform= "rotate(0deg)"
   }else{
     elem.nextElementSibling.style.display="block"
+    arrow.style.transform= "rotate(180deg)"
   }
 }
 let maleResult=""
@@ -109,11 +112,9 @@ function generate() {
       let lastIndex= Math.floor(Math.random()*lastNames.length)
       bothResult= bothNames[bothIndex]
       lastResult= lastNames[lastIndex]
-      output.innerHTML= `<h2>${bothResult} ${lastResult}</h2>`
+      let result= document.createElement("h2")
+      result.innerHTML=`${bothResult} ${lastResult}`
+      output.appendChild(result)
     }
   }
-
-
-
-  
 }

@@ -91,6 +91,10 @@ header h1 span{
   align-items: center;
   cursor: pointer;
 }
+.arrow{
+  transition-duration: 0.3s;
+
+}
 .dropdown{
   display: none;
 }
