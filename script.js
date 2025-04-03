@@ -308,3 +308,7 @@ if (!hasResult) {
 }
 }
 
+const container= document.querySelector(".container")
+
+  const interval= setInterval(() => {container.append(container.firstElementChild)
+  }, 2000);

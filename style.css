@@ -13,7 +13,7 @@ ul li{
 body{
   font-family: "Poppins", sans-serif;
   background: linear-gradient(0deg,#ffffff, #daf7dc );
-  height: 100vh;
+  height: auto;
   color: #001242;
 }
 
@@ -40,11 +40,43 @@ header h1 span{
 }
 #banner {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   overflow: hidden;
   position: relative;
 }
-
+#banner:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+  background: #2b28284b;
+  backdrop-filter: blur(3px);
+}
+#banner .heading{
+  position: absolute;
+  background: #00000015;
+  z-index: 2;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#banner .heading .span{
+display: block;
+font-size: 44px;
+color: #20bf55;
+}
+#banner .heading span{
+  font-family: "Protest Riot", sans-serif; 
+  font-size: 52px;
+}
 .container {
   display: flex;
   transition: transform 1s ease;
