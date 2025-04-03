@@ -28,16 +28,22 @@
 </div>
 <div class="how-many">
   <h2>How Many Names</h2>
-  <input class="name-number" type="number">
+  <input class="name-number" value="1" type="number">
   <button onclick="generate()">Generate Random Name</button>
 </div>
 <div class="more-options">
-  <h4 onclick="option(this)">Show More Options</h4>
+  <h4 onclick="option(this)">Show More Options<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg></h4>
+<div class="dropdown">
   <div class="options">
-  <span>Propets Names</span>
-  <span>Angles Names</span>
-  <span>Sahabas Names</span>
+    <span>Propets Names</span>
+    <span>Angles Names</span>
+    <span>Sahabas Names</span>
   </div>
+  <div class="ahphabet-search">
+    <label for="alphabet">Search by First Alphabet</label>
+    <input placeholder="A/B/C" id="alphabet" type="text"><button onclick="search()">Search</button>
+  </div>
+</div>
 </div>
 </div>
 <div class="right-output">
