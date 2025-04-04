@@ -90,8 +90,9 @@ color: #20bf55;
 
 #main{
   padding: 100px 0;
+  padding-bottom: 0px;
   display: flex;
-  height: 674px;
+  height: 600px;
   justify-content: space-between;
   width: 1320px;
   margin: 0 auto;
@@ -106,7 +107,7 @@ color: #20bf55;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
 }
@@ -156,9 +157,7 @@ justify-content: center;
   border-radius: 10px;
   border: 1px solid #20bf55;
 }
-#main .more-options .ahphabet-search label {
-  margin: 20px 0;
-}
+
 #main h4{
   font-size: 18px;
   display: flex;
@@ -222,6 +221,11 @@ justify-content: center;
   border: 1px solid #20bf55;
   background: #20bf55;
   color: white;
+}
+#fav-list{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 @media (max-width:600px){

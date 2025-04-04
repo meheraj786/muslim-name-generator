@@ -174,7 +174,38 @@ const lastNames = [
   "Shujauddin", "Qudrat", "Saadi", "Saqqaf", "Suhrawardy", "Tauqeer", "Hanzala", "Azfar", "Badiuzzaman", "Faqir",
   "Sharaf", "Talib", "Tamimuddin", "Tahiruddin", "Wasif", "Shamil", "Azmat", "Zubaidi", "Shajar", "Shakur"
 ];
-console.log(lastNames.length);
+const femaleLastNames = [
+  "Anjuman", "Ashma", "Batul", "Basira", "Durdana", "Farihat", "Gulshan", "Habiba", "Husnara", "Ilma",
+  "Ishma", "Jamila", "Jasmina", "Kalima", "Karima", "Khairun", "Laili", "Latifa", "Lubaba", "Mahmuda",
+  "Maliha", "Manowara", "Mashira", "Mazida", "Mehruba", "Mehzabin", "Minhaz", "Mou", "Munawara", "Murshida",
+  "Nabila", "Nafisa", "Nahira", "Naima", "Najmun", "Nashrin", "Nazima", "Naznin", "Nazia", "Nehal",
+  "Noorin", "Noshin", "Nurani", "Nuzrat", "Parveen", "Qudsia", "Rabita", "Raihana", "Raisa", "Rokhshana",
+  "Roushanara", "Rozina", "Rubaba", "Rumana", "Ruqayya", "Sabahat", "Sadia", "Sahiba", "Saima", "Sakeena",
+  "Saliha", "Samah", "Samina", "Sanwara", "Saphia", "Sarwat", "Shabana", "Shaheena", "Shairin", "Sharifa",
+  "Shazmeen", "Shireen", "Shumona", "Siddiqua", "Sohara", "Sohila", "Sonia", "Sophiya", "Subah", "Subrina",
+  "Suchana", "Suhana", "Sumaiya", "Sumona", "Suraiya", "Suzana", "Syeda", "Tahera", "Tahmina", "Tamanna",
+  "Tanira", "Tanjina", "Tarin", "Tasfia", "Tasneem", "Tasmia", "Tumpa", "Ummehani", "Urooj", "Wafiya",
+  "Waliha", "Wardah", "Yasmina", "Yumna", "Zakia", "Zannat", "Zaria", "Zarin", "Zarifa", "Zeba",
+  "Zehra", "Zia", "Ziyana", "Zohra", "Zubaria", "Zunaira", "Afroza", "Afsana", "Alfiya", "Amatul",
+  "Amira", "Anjuli", "Anwara", "Arisha", "Asifa", "Asma", "Atiya", "Azima", "Barira", "Bazla",
+  "Benazir", "Bushra", "Dania", "Darina", "Disha", "Durre", "Efat", "Eshana", "Fabeha", "Faiqa",
+  "Fakhira", "Farhath", "Fariya", "Fasiha", "Fatema", "Fauzia", "Ferdousi", "Fiza", "Gausia", "Ghazala",
+  "Gulbarg", "Hadia", "Halima", "Hamida", "Hannana", "Hasnat", "Heba", "Humayra", "Inaya", "Irtika",
+  "Ishrat", "Jameela", "Jannati", "Jaria", "Jasmine", "Juwairiya", "Kainat", "Kashfia", "Kawkab", "Khadeja",
+  "Khadra", "Khansa", "Kulsum", "Lamisa", "Liyana", "Lubaba", "Lutfunnahar", "Madiha", "Maeesha", "Mahnoor",
+  "Mahreen", "Maisa", "Maisha", "Malika", "Manaal", "Manahil", "Marjan", "Masrat", "Mawadda", "Mehnaz",
+  "Meryem", "Mifrah", "Misbah", "Miskat", "Mobashera", "Momina", "Moumi", "Munazzah", "Munira", "Muntaha",
+  "Nabeela", "Naheed", "Nailah", "Najma", "Namira", "Nargis", "Nasima", "Nazira", "Nihal", "Nilufa",
+  "Noor", "Nuha", "Nurunnahar", "Oyshee", "Parisa", "Popy", "Priyanka", "Qamarunnisa", "Quratulain", "Rabeya",
+  "Rahela", "Rahima", "Rahnuma", "Raisa", "Ranya", "Reema", "Rehnuma", "Rida", "Rifat", "Rihana",
+  "Rokaiya", "Roza", "Rubina", "Rumana", "Ruqaiyah", "Sabina", "Sabrina", "Sadia", "Safiya", "Sajida",
+  "Salima", "Samar", "Sania", "Saniyah", "Sariya", "Sarra", "Seher", "Shaima", "Shaista", "Shakila",
+  "Sharmin", "Shazia", "Shehnaz", "Sheuly", "Shifa", "Shirin", "Sobia", "Sowmiya", "Subrina", "Sughra",
+  "Sultana", "Sumana", "Sumayya", "Sundus", "Tabassum", "Tahira", "Tajkia", "Tania", "Tasmim", "Tawhida",
+  "Tuba", "Ummehani", "Warda", "Wasifa", "Yara", "Yusra", "Zaibun", "Zakiya", "Zamzam", "Zarmin"
+];
+
+console.log(femaleLastNames.length);
 const prophetsNames = [
   "Adam", "Idris", "Nuh", "Hud", "Salih", 
   "Ibrahim", "Lut", "Ismail", "Ishaq", "Yaqub", 
@@ -193,7 +224,32 @@ const sahabaNames = [
   "Abu Talib", "Al-Zubair Ibn Al-Awwam", "Abu Bakr Al-Siddiq", "Abu Abdullah",
   "Abu Sa'id Al-Khudri", "Abu Rafi", "Abu Dharr Al-Ghifari", "Abu Ayub Al-Ansari", 
   "Rabi'ah ibn Ka'b", "Abu Uthman Al-Nahdi", "Al-Bara Ibn Malik", "Abu Huraira", 
-  "Anas ibn Malik", "Qais ibn Sa'd", "Abu Ibrahim"
+  "Anas ibn Malik", "Qais ibn Sa'd", "Abu Ibrahim","Adiba", "Afia", "Ahmadi", "Aklima", "Alia", "Amatullah", "Amreen", "Anisa", "Anjuli", "Anjumanara",
+  "Aqeela", "Arwa", "Asfiya", "Ashrafi", "Asila", "Atika", "Ayana", "Ayesha", "Azra", "Badia",
+  "Bariha", "Basima", "Batool", "Bisma", "Bithika", "Bushrat", "Chandni", "Dalia", "Dania", "Dilara",
+  "Dilruba", "Eeman", "Elma", "Emira", "Eshrat", "Ety", "Fareeha", "Farzana", "Fathima", "Fauziya",
+  "Fazilat", "Ferdausi", "Fiza", "Ghina", "Golejan", "Gulsan", "Hadia", "Hajera", "Hamna", "Hanifa",
+  "Hareem", "Hasina", "Heba", "Hena", "Hoor", "Huma", "Humaira", "Husna", "Ifrah", "Ijlal",
+  "Ikra", "Ilham", "Insiya", "Intisar", "Iqra", "Irha", "Ishita", "Ismat", "Isra", "Itrat",
+  "Jahanara", "Jannat", "Jawaria", "Jenifa", "Joya", "Juhaina", "Kadeeja", "Kashmala", "Khadra", "Khushi",
+  "Komola", "Kulsoom", "Laiba", "Lamees", "Lamia", "Lana", "Latifa", "Lubna", "Lujayn", "Lutfa",
+  "Madiha", "Mahfuza", "Mahira", "Mahjabin", "Mahnoor", "Maisha", "Majida", "Maliha", "Malka", "Marufa",
+  "Marzan", "Masuma", "Meher", "Mehjabeen", "Mehnaz", "Meryem", "Mim", "Mina", "Minara", "Misbah",
+  "Miskat", "Mobassira", "Momtaz", "Monira", "Mouree", "Muqaddas", "Mursalat", "Nabiha", "Naeema", "Naima",
+  "Najat", "Najma", "Nakhat", "Nandita", "Naseema", "Nasifa", "Nasira", "Nasreen", "Nazahat", "Nazima",
+  "Nazia", "Neha", "Nejma", "Nida", "Nihar", "Nikhat", "Nila", "Nisma", "Noshaba", "Nusrat",
+  "Nuzhat", "Papia", "Parisa", "Parvin", "Pervin", "Piyasha", "Qamra", "Qistina", "Qudsia", "Rabia",
+  "Rafia", "Raiha", "Raima", "Ranya", "Rashida", "Rayhanah", "Rebeka", "Rehnuma", "Rida", "Rifat",
+  "Rihana", "Rima", "Rizwana", "Roja", "Romana", "Ronjona", "Roushan", "Rozina", "Rukaiya", "Rumana",
+  "Ruqayya", "Sabahat", "Sabina", "Sabrina", "Sadia", "Safah", "Safina", "Sahra", "Saima", "Sajida",
+  "Sakeena", "Salma", "Samiha", "Samra", "Sana", "Sanika", "Sanika", "Saniya", "Sara", "Sarwat",
+  "Savera", "Sayema", "Sehar", "Sejuti", "Shaheda", "Shaima", "Shaista", "Sharmin", "Sharvani", "Shazia",
+  "Shefa", "Shirin", "Shurovi", "Shyma", "Siddiqa", "Sobia", "Sohana", "Sonia", "Sonika", "Sophia",
+  "Sufia", "Sughra", "Suhana", "Sultana", "Sumaiya", "Sumayya", "Sundus", "Suraiya", "Suzana", "Syeda",
+  "Tabana", "Tabassum", "Tahani", "Tahira", "Tahsin", "Tania", "Tanjila", "Taqwa", "Tasfia", "Tasnim",
+  "Tasmiyah", "Taybah", "Tuba", "Umama", "Ummehani", "Urmi", "Wajiha", "Warda", "Waseela", "Yameena",
+  "Yasmeen", "Yusra", "Zaara", "Zafira", "Zahida", "Zahra", "Zaida", "Zakia", "Zamzam", "Zannat",
+  "Zara", "Zareen", "Zarifa", "Zarina", "Zarrin", "Zeba", "Zeenat", "Zia", "Zinnia", "Zohra"
 ];
 const femaleSahabaNames = [
   "Khadijah bint Khuwaylid", "Aisha bint Abu Bakr", "Fatimah bint Muhammad", "Umm Salamah",
@@ -222,6 +278,7 @@ let maleResult=""
 let femaleResult= ""
 let lastResult=""
 let bothResult= ""
+let ul= document.querySelector("ul")
 const output= document.querySelector(".right-output")
 function generate() {
   const maleCheck= document.querySelector("#male")
@@ -236,29 +293,39 @@ function generate() {
       maleResult= maleNames[maleIndex]
       lastResult= lastNames[lastIndex]
       let result= document.createElement("h2")
-      result.innerHTML=`${maleResult} ${lastResult}<button>🖤</button>`
+      result.innerHTML=`${maleResult} ${lastResult}<button onclick="save(this)">🖤</button>`
       output.appendChild(result)
+
     }else if(femaleCheck.checked){
       let femaleIndex= Math.floor(Math.random()*femaleNames.length)
-      let lastIndex= Math.floor(Math.random()*lastNames.length)
+      let lastIndex= Math.floor(Math.random()*femaleLastNames.length)
       femaleResult= femaleNames[femaleIndex]
-      lastResult= lastNames[lastIndex]
+      lastResult= femaleLastNames[lastIndex]
       let result= document.createElement("h2")
       result.innerHTML=`${femaleResult} ${lastResult}`
       output.appendChild(result)
-    }else{
-      let bothNames=maleNames.concat(femaleNames)
-      let bothIndex= Math.floor(Math.random()*(bothNames.length))
-      let lastIndex= Math.floor(Math.random()*lastNames.length)
-      bothResult= bothNames[bothIndex]
-      lastResult= lastNames[lastIndex]
-      let result= document.createElement("h2")
-      result.innerHTML=`${bothResult} ${lastResult}`
-      output.appendChild(result)
+    }
+    // else{
+      //   let bothNames=maleNames.concat(femaleNames)
+      //   let bothIndex= Math.floor(Math.random()*(bothNames.length))
+      //   let lastIndex= Math.floor(Math.random()*lastNames.length)
+      //   bothResult= bothNames[bothIndex]
+      //   lastResult= lastNames[lastIndex]
+      //   let result= document.createElement("h2")
+      //   result.innerHTML=`${bothResult} ${lastResult}`
+      //   output.appendChild(result)
+      // }
     }
   }
-}
-
+  function save(elem) {
+    let savedName= document.createElement("li")
+    savedName.innerHTML= `${elem.parentElement.innerText}<button onclick="delet(this)">delete</button>`
+    ul.appendChild(savedName)
+  }
+  function delet(elem) {
+    elem.parentElement.remove()
+  }
+  
 const prophets= document.querySelector(".propets")
 const femaleSahabas= document.querySelector(".femaleSahabas")
 const sahabas= document.querySelector(".sahabas")
@@ -288,22 +355,44 @@ femaleSahabas.addEventListener("click", function () {
   })
 })
 
-function search(){
+function search() {
   output.innerHTML = "";
-  const alphabetInput= document.querySelector("#alphabet").value
-  let totalNames= maleNames.concat(femaleNames)
-  let hasResult= false;
-  totalNames.filter((name)=>{
-    if (name[0]==alphabetInput.toUpperCase()) {
-      let result= document.createElement("h2")
-      result.innerHTML=(name)
-      hasResult= true;
-    output.appendChild(result)
+  const alphabetInput = document.querySelector("#alphabet").value.trim().toUpperCase();
+  const isMale = document.querySelector("#smale").checked;
+  const isFemale = document.querySelector("#sfemale").checked;
+
+  let filteredArray = [];
+  let lastNameArray = [];
+
+  // Choose gender-based array and appropriate last names
+  if (isMale) {
+    filteredArray = maleNames;
+    lastNameArray = lastNames;
+  } else if (isFemale) {
+    filteredArray = femaleNames;
+    lastNameArray = femaleLastNames;
+  } else {
+    const warning = document.createElement("h2");
+    warning.innerHTML = "Please select a gender.";
+    output.appendChild(warning);
+    return;
   }
-})
-if (!hasResult) {
-  let result= document.createElement("h2")
-      result.innerHTML="Sorry, no names found"
-    output.appendChild(result)
-}
+
+  let hasResult = false;
+
+  filteredArray.forEach((name) => {
+    if (name[0].toUpperCase() === alphabetInput) {
+      const randomLast = lastNameArray[Math.floor(Math.random() * lastNameArray.length)];
+      const result = document.createElement("h2");
+      result.innerHTML = `${name} ${randomLast}`;
+      hasResult = true;
+      output.appendChild(result);
+    }
+  });
+
+  if (!hasResult) {
+    const result = document.createElement("h2");
+    result.innerHTML = "Sorry, no names found.";
+    output.appendChild(result);
+  }
 }
