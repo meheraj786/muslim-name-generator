@@ -20,28 +20,23 @@
       <h1><span class="span">Over 1000+ <span class="muslim">Muslim</span> names</span> are available for your baby</h1>
     </div>
     <div class="container">
-      <img src="assets/newborn-2579144_1280.jpg" alt="">
-      <img src="assets/omar-lopez-vTknj2OxDVg-unsplash.jpg" alt="">
-      <img src="assets/pexels-pixabay-161534.jpg" alt="">
-      <img src="assets/pexels-tanaya-sadhukhan-2132178-3764623.jpg" alt="">
-      <img src="assets/pexels-vidalbalielojrfotografia-4005600.jpg" alt="">
     </div>
   </div>
   <div id="main">
     <div class="left-input">
-<div class="gender">
-  <h2>Gender</h2>
-  <input checked id="male" type="radio" name="gender">
-  <label for="male">Male</label>
-  <input id="female" type="radio" name="gender">
-  <label for="female">Female</label>
-  <input id="both" type="radio" name="gender">
-  <label for="both">Both</label>
-</div>
-<div class="how-many">
-  <h2>How Many Names</h2>
-  <input class="name-number" value="1" type="number">
-  <button onclick="generate()">Generate Random Name</button>
+<div class="left-top">
+  <div class="gender">
+    <h2>Gender</h2>
+    <input checked id="male" type="radio" name="gender">
+    <label for="male">Male</label>
+    <input id="female" type="radio" name="gender">
+    <label for="female">Female</label>
+  </div>
+  <div class="how-many">
+    <h2>How Many Names</h2>
+    <input class="name-number" value="1" type="number">
+    <button onclick="generate()">Generate Random Name</button>
+  </div>
 </div>
 <div class="more-options">
   <h4 onclick="option(this)">Show More Options<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg></h4>
@@ -53,8 +48,12 @@
   </div>
   <div class="ahphabet-search">
     <label for="alphabet">Search by First Alphabet</label>
-    <input placeholder="A/B/C" id="alphabet" type="text"><button onclick="search()">Search</button>
+    <input placeholder="A/B/C" id="alphabet" type="text">
+    <input id="smale" type="radio" name="search-gender"><label for="smale">Male</label>
+    <input id="sfemale" type="radio" name="search-gender">
+    <label for="sfemale">Female</label>
   </div>
+  <button onclick="search()">Search</button>
 </div>
 </div>
 </div>

@@ -236,7 +236,7 @@ function generate() {
       maleResult= maleNames[maleIndex]
       lastResult= lastNames[lastIndex]
       let result= document.createElement("h2")
-      result.innerHTML=`${maleResult} ${lastResult}`
+      result.innerHTML=`${maleResult} ${lastResult}<button>🖤</button>`
       output.appendChild(result)
     }else if(femaleCheck.checked){
       let femaleIndex= Math.floor(Math.random()*femaleNames.length)
@@ -307,8 +307,3 @@ if (!hasResult) {
     output.appendChild(result)
 }
 }
-
-const container= document.querySelector(".container")
-
-  const interval= setInterval(() => {container.append(container.firstElementChild)
-  }, 2000);
