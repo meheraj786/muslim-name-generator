@@ -302,7 +302,7 @@ function generate() {
       femaleResult= femaleNames[femaleIndex]
       lastResult= femaleLastNames[lastIndex]
       let result= document.createElement("h2")
-      result.innerHTML=`${femaleResult} ${lastResult}`
+      result.innerHTML=`${femaleResult} ${lastResult}<button onclick="save(this)">🖤</button>`
       output.appendChild(result)
     }
     // else{
@@ -334,7 +334,7 @@ prophets.addEventListener("click", function () {
   output.innerHTML = "";
   prophetsNames.map((names)=>{
     let result= document.createElement("h2")
-      result.innerHTML=(names)
+      result.innerHTML=`${names}<button onclick="save(this)">🖤</button>`
     output.appendChild(result)
   })
 })
@@ -342,7 +342,7 @@ sahabas.addEventListener("click", function () {
   output.innerHTML = "";
   sahabaNames.map((names)=>{
     let result= document.createElement("h2")
-      result.innerHTML=(names)
+      result.innerHTML=`${names}<button onclick="save(this)">🖤</button>`
     output.appendChild(result)
   })
 })
@@ -350,7 +350,7 @@ femaleSahabas.addEventListener("click", function () {
   output.innerHTML = "";
   femaleSahabaNames.map((names)=>{
     let result= document.createElement("h2")
-      result.innerHTML=(names)
+      result.innerHTML=`${names}<button onclick="save(this)">🖤</button>`
     output.appendChild(result)
   })
 })
@@ -384,7 +384,7 @@ function search() {
     if (name[0].toUpperCase() === alphabetInput) {
       const randomLast = lastNameArray[Math.floor(Math.random() * lastNameArray.length)];
       const result = document.createElement("h2");
-      result.innerHTML = `${name} ${randomLast}`;
+      result.innerHTML = `${name} ${randomLast}<button onclick="save(this)">🖤</button>`;
       hasResult = true;
       output.appendChild(result);
     }
