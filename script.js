@@ -319,7 +319,7 @@ function generate() {
   }
   function save(elem) {
     let savedName= document.createElement("li")
-    savedName.innerHTML= `${elem.parentElement.innerText}<button onclick="delet(this)">delete</button>`
+    savedName.innerHTML= `${elem.parentElement.innerText}<button onclick="delet(this)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" d="M14 11v6m-4-6v6M6 7v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7M4 7h16M7 7l2-4h6l2 4" stroke-width="1"/></svg></button>`
     ul.appendChild(savedName)
   }
   function delet(elem) {
